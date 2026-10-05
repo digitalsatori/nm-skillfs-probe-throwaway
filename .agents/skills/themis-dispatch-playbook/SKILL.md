@@ -71,6 +71,10 @@ One line each; every line traces to a fleet learning or a named skill section.
 12. Installing into a container needs `--network=host` + the Tsinghua pip
     source; unpack big archives under `/home/tony/`, not the `/tmp` tmpfs.
     [main-home learnings: 测试与验收]
+13. Real-machine/container verification runs on the target repo's existing
+    lane scaffolding under `tools/` - never a hand-rolled container flow;
+    health criterion and pitfall write-back in odoo-environment "Verification
+    lanes". [odoo-environment "Verification lanes"]
 
 ## Series-repo tools: status at a glance
 

@@ -70,6 +70,15 @@ Acceptance criteria:
   silently breaks attachment/media links. Restore DB and filestore from the
   same backup, or rebuild both together.
 
+## Verification lanes: use the repo's lane scaffolding
+
+Real-machine or container verification always runs on the target repo's
+existing lane scaffolding under `tools/` - check there first and follow the
+tool's own `--help`; never hand-roll a container flow. Judge the lane healthy
+by an in-container DB query or DB errors in the Odoo log - container `Up` or a
+login page 200 is not "usable". New pitfalls are written back into that tool,
+not left in a task directory.
+
 ## Upgrading modules with cross-module dependencies
 
 When a module's new code references models/schema from another module (e.g. a
