@@ -1,6 +1,6 @@
 ---
 name: odoo-environment
-description: "Set up and operate Odoo test/demo environments: Docker Compose, module mounting, addons paths, container lifecycle, local smoke tests. Use when a task is about environment provisioning or operations (compose changes, adding an addons mount, restarting containers, running a local module smoke test) - NOT for writing module code (see odoo-development)."
+description: "Probe: minimal description."
 metadata:
   internal: true
 ---
